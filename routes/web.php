@@ -33,4 +33,5 @@ Route::group(['middleware'=>['auth.user']], function(){
     Route::get('/country/ajax/{country_id}', [AuthController::class, 'getCountryPop']);
     Route::get('/city/ajax/{city_id}', [AuthController::class, 'getCityPop']);
     Route::get('/gender/ajax/{city_id}/{gender_id}', [AuthController::class, 'getGenderPop']);
+    Route::get('/gender/ajax/country/{country_id}/{gender_id}', [AuthController::class, 'getGenderPopByCountry']);
 });

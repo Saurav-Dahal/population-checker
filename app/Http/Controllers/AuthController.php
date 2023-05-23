@@ -165,7 +165,7 @@ class AuthController extends Controller
     }
 
     public function getGenderPop($city_id, $gender_id)
-    {
+    {   
         $population = Population::query();
 
         if($gender_id > 0){
@@ -176,28 +176,18 @@ class AuthController extends Controller
         } 
     }
 
+    public function getGenderPopByCountry($country_id, $gender_id)
+    {  
+        $population = Population::query();
+
+        if($gender_id > 0){
+            $g_people_by_country = $population->where(['country_id' => $country_id])->where(['gender_id' => $gender_id])
+            
+            ->select([DB::raw("SUM(old) as old"), DB::raw("SUM(young) as young"), DB::raw("SUM(child) as child"),'gender_id']) 
+            ->groupBy('gender_id')
+            ->get();
+            return response()->json(['g_people_by_country'=> $g_people_by_country]);
+        } 
+    }
+
 }
-
-// public function reverse_array($arr)
-// {
-//   for(i=0; i<=$arr.length; i++)
-//   {
-//     $value = $arr
-//   }
-//   return $arr;
-// }
-
-// $salary = Salary::where('salary', $salary)->orderBy('salary', DESC)->get();
-
-// SELECT 'salary' FROM  'employee_table' WHERE 'salary = $salary' ORDERBY 'salary' DESC;
-
-
-// public function changeDate($date)
-// {   
-//     for(i=0; i<=count($date); i++){
-//         $value = split('', $date);
-
-//         if()
-
-//     }
-// }

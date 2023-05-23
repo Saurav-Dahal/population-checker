@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-4">
                         <select class="form-select" aria-label="Default select example" name="city_id" id="city_id">
-                            <option selected>All Cities</option>
+                            <option value = "0" selected>All Cities</option>
                             @foreach($cities as $city)
                             <option value="{{$city->id}}">{{$city->name}}</option>
                             @endforeach
@@ -164,7 +164,7 @@
         }
     </script>
 
-        <script>
+    <script>
         $(document).ready(function () {
             $('#country_id').on('change', function () {
                 var country_id = $(this).val();
@@ -257,7 +257,7 @@
                 });
             });
         });
-     </script>
+    </script>
 
 
     <script>
@@ -309,6 +309,55 @@
 
     </script>
 
-
+    <script>
+        $(document).ready(function () {
+            $('#gender_id').on('change', function () {
+                var country_id = $('#country_id').val();
+                var gender_id = $(this).val();
+                var city_id = $('#city_id').val();
+                if(city_id == 0){
+                    $.ajax({
+                        url: "{{ url('/gender/ajax/country') }}/"+country_id+"/"+gender_id,
+                        type: "GET",
+                        dataType: "json",
+                        success: function (data) {
+                            var g_people_by_country = data.g_people_by_country;
+                            var html = '';
+                            if (g_people_by_country.length != '' ) {
+                                for (let i = 0; i < g_people_by_country.length; i++) {
+                                    html += '<tr>\
+                                    <td>Old</td>\
+                                    <td>' + g_people_by_country[i]['old'] + '</td>\
+                                    </tr>\
+                                    <tr>\
+                                    <td>Young</td>\
+                                    <td>' + g_people_by_country[i]['young'] + '</td>\
+                                    </tr>\
+                                    <tr>\
+                                    <td>Child</td>\
+                                    <td>' + g_people_by_country[i]['child'] + '</td>\
+                                    </tr>';
+                                }
+                            } else {
+                                html += '<tr>\
+                                    <td>Old</td>\
+                                    <td>No Population Found</td>\
+                                    </tr>\
+                                    <tr>\
+                                    <td>Young</td>\
+                                    <td>No Population Found</td>\
+                                    </tr>\
+                                    <tr>\
+                                    <td>Child</td>\
+                                    <td>No Population Found</td>\
+                                    </tr>';
+                                }
+                            $("#tbody").html(html);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
