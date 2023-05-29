@@ -20,10 +20,10 @@ Population checker is a web application written in Laravel framework which is ca
 #### Home Page
  ![pf1](https://github.com/Saurav-Dahal/population-checker/assets/59647255/a2a540fa-db8c-4061-b882-af7cad35d6c7)
  
-#### Sign up Form
+#### Register Form
 ![pf2](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ca6bf8b9-6efd-451a-a6d0-b347dcf46274)
 
-####Login Form
+#### Login Form
 ![pf3](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ad7319ba-439d-4dff-a9a0-485ed7fff4cc)
 
 #### Dashbord
@@ -32,7 +32,7 @@ Population checker is a web application written in Laravel framework which is ca
 #### Showing list of all countries
 ![pf6](https://github.com/Saurav-Dahal/population-checker/assets/59647255/8a28171d-b5e4-44fb-bf55-8bcfd2fb79fd)
 
-#### Australia is selected
+#### Selecting Australia
 ![pf5](https://github.com/Saurav-Dahal/population-checker/assets/59647255/9680651d-0934-4499-9dcd-11aa5e6564e5)
 
 #### Showing list of all cities and selecting Melbourne as cities
