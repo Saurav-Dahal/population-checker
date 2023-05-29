@@ -17,13 +17,15 @@ Population checker is a web application written in Laravel framework which is ca
 - Displays cities as per country selected
 
 ### Images
-
+ Home Page
 ![Capture](https://github.com/Saurav-Dahal/population-checker/assets/59647255/f8f16943-8332-49da-8a44-ae7e2cfa6eda)
+Sign up Form
 ![pf2](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ca6bf8b9-6efd-451a-a6d0-b347dcf46274)
 ![pf3](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ad7319ba-439d-4dff-a9a0-485ed7fff4cc)
 ![pf4](https://github.com/Saurav-Dahal/population-checker/assets/59647255/15508bc4-914b-451d-a4cf-e6bc723f0288)
-![pf5](https://github.com/Saurav-Dahal/population-checker/assets/59647255/9680651d-0934-4499-9dcd-11aa5e6564e5)
 ![pf6](https://github.com/Saurav-Dahal/population-checker/assets/59647255/8a28171d-b5e4-44fb-bf55-8bcfd2fb79fd)
+![pf5](https://github.com/Saurav-Dahal/population-checker/assets/59647255/9680651d-0934-4499-9dcd-11aa5e6564e5)
+
 ![pf7](https://github.com/Saurav-Dahal/population-checker/assets/59647255/c84ce640-b538-4748-9364-1d07ce2b490e)
 ![pf8](https://github.com/Saurav-Dahal/population-checker/assets/59647255/3cba6d1f-db47-4930-97c4-485b5b07feac)
 ![pf9](https://github.com/Saurav-Dahal/population-checker/assets/59647255/fef18df2-85f0-4264-873f-689fa067540e)
