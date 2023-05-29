@@ -3,12 +3,12 @@
 
 Population checker is a web application written in Laravel framework which is capable of connecting with database, transferring data, performing CRUD operations, authenticating users, maintaining sessions, handling errors and displaying population to authorised users.
 
-### Features
+### * Features *
 - Simple, fast and easily accessible
 - Inhouse Authentication System
 - Search Facilities
 
-### Functionality
+### * Functionality *
 - Performs CRUD Operation
 - Authenticate Users
 - Displays Top country with Population
@@ -16,9 +16,11 @@ Population checker is a web application written in Laravel framework which is ca
 - Displays old, young and child population
 - Displays cities as per country selected
 
-### Images
- Home Page
-![Capture](https://github.com/Saurav-Dahal/population-checker/assets/59647255/f8f16943-8332-49da-8a44-ae7e2cfa6eda)
+###  * Images *
+#### Home Page
+ </b>
+ [pf1](https://github.com/Saurav-Dahal/population-checker/assets/59647255/a2a540fa-db8c-4061-b882-af7cad35d6c7)
+
 Sign up Form
 ![pf2](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ca6bf8b9-6efd-451a-a6d0-b347dcf46274)
 ![pf3](https://github.com/Saurav-Dahal/population-checker/assets/59647255/ad7319ba-439d-4dff-a9a0-485ed7fff4cc)
