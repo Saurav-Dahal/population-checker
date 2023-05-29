@@ -9,9 +9,10 @@ Population checker is a web application written in Laravel framework which is ca
 - Search Facilities
 
 ### * Functionality *
-- Performs CRUD Operation
-- Authenticate Users
-- Displays Top country with Population
+- Performs CRUD operation
+- Authenticate users
+- Displays overall population in dashboard
+- Displays Top country withpPopulation
 - Displays male and female popluation 
 - Displays old, young and child population
 - Displays cities as per country selected
