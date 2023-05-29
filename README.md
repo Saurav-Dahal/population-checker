@@ -4,8 +4,8 @@
 Population checker is a web application written in Laravel framework which is capable of connecting with database, transferring data, performing CRUD operations, authenticating users, maintaining sessions, handling errors and displaying population to authorised users.
 
 # Features
--Simple
--** Holo **
+- Simple
+- ** Holo **
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
